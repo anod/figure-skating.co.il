@@ -1423,7 +1423,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	}
 }
 
-@media screen and ( min-width: 79em ) {
+@media screen and ( min-width: 48em ) {
 	.has-header-image .custom-header-media img,
 	.has-header-video .custom-header-media video,
 	.has-header-video .custom-header-media iframe,

@@ -11,14 +11,11 @@
  Text Domain: twentyseventeen-child
 */
 
+@import url('https://fonts.googleapis.com/css?family=Rubik&subset=cyrillic,hebrew');
+
 html {
 	font-family: 'Rubik', sans-serif;
 }
-
-
-/*--------------------------------------------------------------
-5.0 Typography
---------------------------------------------------------------*/
 
 body,
 button,
@@ -132,7 +129,6 @@ html[lang="he-IL"] h6 {
 	}
 }
 
-
 /*--------------------------------------------------------------
 13.3 Regular Content
 --------------------------------------------------------------*/
@@ -160,4 +156,36 @@ html[lang="he-IL"] h6 {
 .twentyseventeen-front-page.page-one-column .entry-header,
 .archive.page-one-column:not(.has-sidebar) .page-header {
     margin-bottom: 1.5em;
+}
+
+/* blog */
+
+/* 172 hebrew */
+.page.page-one-column article.post-172 .entry-header {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.page.page-one-column article.post-172 .entry-content p {
+	margin: 0;
+}
+
+/* 177 russian */
+.page.page-one-column article.post-177 .entry-header {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.page.page-one-column article.post-177 .entry-content p {
+	margin: 0;
+}
+
+/* 175 english */
+.page.page-one-column article.post-175 .entry-header {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.page.page-one-column article.post-175 .entry-content p {
+	margin: 0;
 }

@@ -26,12 +26,12 @@
 
 <body <?php body_class(); ?>>
     <?php 
-        $tag = '';
-        if ($tag == 'facebook'):
+        $is_facebook = current(array_filter(get_tags(['hide_empty' => false]) , function($tag) { return strtolower($tag->name) == 'facebook'; }));
+        if ($is_facebook):
     ?>
         <div id="fb-root"></div>
         <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/<?php echo get_locale() ?>/sdk.js#xfbml=1&amp;version=v3.2&amp;appId=579875202354250&amp;autoLogAppEvents=1"></script>
-    <?
+    <?php
         endif;
     ?>
     <div id="page" class="site">

@@ -26,7 +26,8 @@
 
 <body <?php body_class(); ?>>
     <?php 
-        $is_facebook = current(array_filter(get_tags(['hide_empty' => false]) , function($tag) { return strtolower($tag->name) == 'facebook'; }));
+        $page_id = get_the_ID();
+        $is_facebook = $page_id ? current(array_filter(get_the_tags($page_id) , function($tag) { return strtolower($tag->name) == 'facebook'; })) : false;
         if ($is_facebook):
     ?>
         <div id="fb-root"></div>
